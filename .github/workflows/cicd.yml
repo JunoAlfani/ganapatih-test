@@ -22,7 +22,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t restaurant-app .
+          docker build -t restaurant-app -f docker/Dockerfile .
 
       - name: Validate docker-compose
         run: docker compose config
